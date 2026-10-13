@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #263238;
+}
+
+header {
+  background: #2457a7;
+  color: white;
+  padding: 28px 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.period {
+  margin: 15px 0;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card,
+.form-box,
+.transaction {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+
+.income {
+  color: #18864b;
+}
+
+.expense {
+  color: #d33b3b;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccd3dd;
+  border-radius: 6px;
+  font-size: 15px;
+  background: white;
+}
+
+button {
+  padding: 10px 14px;
+  margin: 5px 4px 5px 0;
+  background: #2457a7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.cancel {
+  background: #687386;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.transaction h3 {
+  margin-top: 0;
+}
+
+.transaction p {
+  color: #657080;
+  font-size: 14px;
+}
+
+.transaction strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.actions {
+  margin-top: 8px;
+}
+
+.delete {
+  background: #c0392b;
+}
+
+.message {
+  padding: 12px;
+  background: #e5edff;
+  border-radius: 6px;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  background: #263238;
+  color: white;
+  padding: 18px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 12px;
+  }
+
+  .transaction {
+    align-items: flex-start;
+  }
+
+  .transaction h3 {
+    font-size: 16px;
+  }
+}
